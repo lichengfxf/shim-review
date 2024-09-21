@@ -22,7 +22,7 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
-[your text here]
+Suzhou Shenxinda Network Technology Co., Ltd.
 
 *******************************************************************************
 ### What product or service is this for?
