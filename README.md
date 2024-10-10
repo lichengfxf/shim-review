@@ -22,22 +22,22 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
-Suzhou Shenxinda Network Technology Co., Ltd.
+Suzhou Shenxinda Network Technology Co., Ltd. We provide data leakage prevention solutions for organizations.
 
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-[your text here]
+Shenxinda Security OS is a Debian-based linux distribution with enhanced security features.
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 *******************************************************************************
-[your text here]
+As UEFI Secure Boot is now considered as mandatory feature of hardware, it is critical for Shenxinda to support Secure Boot in order that our Operating System can boot on Hardware in which Secure Boot is enabled without rolling out custom keys first. 
 
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-[your text here]
+The linux kernel and the modules needs to be customized to support customer's peripherals and needs. Currently no known Linux distro with Secure Boot is shipping a suitable kernel, so we need to compile our own.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -46,10 +46,11 @@ The security contacts need to be verified before the shim can be accepted. For s
 An authorized reviewer will initiate contact verification by sending each security contact a PGP-encrypted email containing random words.
 You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: Licheng
+- Position: R&D Engineer
+- Email address: licheng@shenxinda.com
+- PGP key fingerprint: CA2FB9E3A10BAC12FB1017420C879E1611BE72CA 
+https://keyserver.ubuntu.com/pks/lookup?search=CA2FB9E3A10BAC12FB1017420C879E1611BE72CA&fingerprint=on&op=index
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
