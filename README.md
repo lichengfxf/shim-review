@@ -46,11 +46,11 @@ The security contacts need to be verified before the shim can be accepted. For s
 An authorized reviewer will initiate contact verification by sending each security contact a PGP-encrypted email containing random words.
 You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
 *******************************************************************************
-- Name: Licheng
+- Name: Li Cheng
 - Position: R&D Engineer
 - Email address: licheng@shenxinda.com
 - PGP key fingerprint: CA2FB9E3A10BAC12FB1017420C879E1611BE72CA 
-https://keyserver.ubuntu.com/pks/lookup?search=CA2FB9E3A10BAC12FB1017420C879E1611BE72CA&fingerprint=on&op=index
+- https://keyserver.ubuntu.com/pks/lookup?search=CA2FB9E3A10BAC12FB1017420C879E1611BE72CA&fingerprint=on&op=index
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -59,10 +59,11 @@ well known in the Linux community.)
 *******************************************************************************
 ### Who is the secondary contact for security updates, etc.?
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: Chen Gang
+- Position: Chief Technology Officer
+- Email address: chengang@shenxinda.com
+- PGP key fingerprint: 5455D969BA841F9C71ED702051BF7F85A787DC62
+- https://keyserver.ubuntu.com/pks/lookup?search=5455D969BA841F9C71ED702051BF7F85A787DC62&fingerprint=on&op=index
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -87,7 +88,7 @@ Make sure that you've verified that your build process uses that file as a sourc
 
 A short guide on verifying public keys and signatures should be available in the [docs](./docs/) directory.
 *******************************************************************************
-[your text here]
+yes
 
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to result in your binary:
@@ -95,26 +96,26 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-[your url here]
+https://github.com/lichengfxf/shim-review
 
 *******************************************************************************
 ### What patches are being applied and why:
 Mention all the external patches and build process modifications, which are used during your building process, that make your shim binary be the exact one that you posted as part of this application.
 *******************************************************************************
-[your text here]
+No patches are being applied to the shim
 
 *******************************************************************************
 ### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-[your text here]
+No
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
 Skip this, if you're not using GRUB2.
 *******************************************************************************
-[your text here]
+We are using Canonical implementation of Secure Boot.
 
 *******************************************************************************
 ### Do you have fixes for all the following GRUB2 CVEs applied?
@@ -159,14 +160,20 @@ Skip this, if you're not using GRUB2.
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-[your text here]
+All of these CVEs are patched in upstream grub and shim
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-[your text here]
+Yes my grub SBAT looks like this:
+
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,4,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
+grub.shenxinda,1,shenxinda,grub,2.12,https://www.shenxinda.com
+```
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
