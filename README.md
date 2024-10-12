@@ -281,45 +281,47 @@ Skip this, if you're not using GRUB2.
 
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
-[your text here]
+```
+part_msdos part_gpt part_msdos fat memdisk squash4 iso9660 cpio loopback keylayouts at_keyboard all_video gfxterm terminal font gettext echo regexp cat gcry_sha256 gcry_sha512 gcry_dsa gcry_rsa password_pbkdf2 pbkdf2 efinet tftp http linux boot halt reboot minicmd sleep test gzio normal configfile peimage
+```
 
 *******************************************************************************
 ### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
 *******************************************************************************
-[your text here]
+We are using grub2 bootloader
 
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-[your text here]
+We are downloading grub sources from official website: http://ftp.gnu.org/gnu/grub We are using the lastest version: 2.06 .
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
 Hint: The most common case here will be a firmware updater like fwupd.
 *******************************************************************************
-[your text here]
+No
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 Skip this, if you're not using GRUB2 or systemd-boot.
 *******************************************************************************
-[your text here]
+No
 
 *******************************************************************************
 ### How do the launched components prevent execution of unauthenticated code?
 Summarize in one or two sentences, how your secure bootchain works on higher level.
 *******************************************************************************
-[your text here]
+shim verifies signature of grub, grub verifies signature of kernel. Grub also use a builtin GPG key that ensures that all grub configs and initrd cannot be modified. Kernel is compiled with CONFIG_LOCK_DOWN_KERNEL_FORCE_INTEGRITY, CONFIG_MODULE_SIG_FORCE, CONFIG_INTEGRITY_PLATFORM_KEYRING and CONFIG_INTEGRITY_MACHINE_KEYRING. Kernel modules are signed using the same vendor keypair used inside shim image.
 
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
 *******************************************************************************
-[your text here]
+No
 
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-[your text here]
+We are using the Linux kernel (6.6.56) without additional patches
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
@@ -329,9 +331,9 @@ A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us 
 
 For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
 *******************************************************************************
-[your text here]
+Not yet
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
-[your text here]
+None
