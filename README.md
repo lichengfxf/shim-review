@@ -244,7 +244,7 @@ It is our first application
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+48d027222f5ba4d1e515f2a09ae6ea78aac1eb517fb00c03ec02a3d59cc759ac
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
