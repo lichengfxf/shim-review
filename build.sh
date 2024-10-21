@@ -2,9 +2,8 @@
 
 set -e
 
-mkdir -p output review
+mkdir -p review
 docker build --tag shim_build . 2>&1 | tee review/build-log.txt
 
-# for name in $(find ./output/ -type f -name "shim*.efi"); do cp -av $name ./review; done 
-# ( cd review && sha256sum shim*.efi > hashs.txt )
-
+# for review
+sudo docker run --rm -v $(pwd)/review:/mnt shim_build bash -c "find /work/output/ -type f -name 'shim*.efi' -exec cp -av {} /mnt \; && sha256sum /mnt/shim*.efi > /mnt/hashs.txt"
