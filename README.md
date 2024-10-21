@@ -171,8 +171,8 @@ Yes my grub SBAT looks like this:
 
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,4,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
-grub.shenxinda,1,shenxinda,grub,2.12,https://www.shenxinda.com
+grub,4,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/
+grub.shenxinda,1,shenxinda,grub,2.06,mail:security@shenxinda.com
 ```
 
 *******************************************************************************
@@ -271,6 +271,13 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
+shim
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+```
+
+grub
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,4,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/
