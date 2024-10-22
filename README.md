@@ -291,7 +291,7 @@ Skip this, if you're not using GRUB2.
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
 ```
-part_msdos part_gpt part_msdos fat memdisk squash4 iso9660 cpio loopback keylayouts at_keyboard all_video gfxterm terminal font gettext echo regexp cat gcry_sha256 gcry_sha512 gcry_dsa gcry_rsa password_pbkdf2 pbkdf2 efinet tftp http linux boot halt reboot minicmd sleep test gzio normal configfile peimage
+part_gpt part_msdos fat memdisk squash4 iso9660 cpio loopback keylayouts at_keyboard all_video gfxterm terminal font gettext echo regexp cat gcry_sha256 gcry_sha512 gcry_dsa gcry_rsa password_pbkdf2 pbkdf2 efinet tftp http linux boot halt reboot minicmd sleep test gzio normal configfile peimage
 ```
 
 *******************************************************************************
@@ -302,7 +302,7 @@ We are using grub2 bootloader
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-We are downloading grub sources from official website: http://ftp.gnu.org/gnu/grub We are using the lastest version: 2.06 .
+We are downloading grub sources from official website: http://ftp.gnu.org/gnu/grub We are using the version: 2.06 .
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
