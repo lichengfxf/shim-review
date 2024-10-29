@@ -244,9 +244,9 @@ It is our first application
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-19e1d705fce71663c16421d3026ac8866aec9cc9ff8b7e2ac4d42a9c1602bee6  shimaa64.efi
-42ae8f4ab6a63806b289522bb3335333fa17bcf0fe25f1f7707fd3a79ad4c3b7  shimia32.efi
-dac2d441b3f7c30b899e128a0520d7ba4d122895f803573495d2545c4eba4acd  shimx64.efi
+dec861c08ed799572940c37cd25362336ec81c09215b9a9eabdbc2a264231005  shimaa64.efi
+4900963fee4202a900c485f7e760033655b25b2523bd2602ce39779072eedf06  shimia32.efi
+b0e949addb41078d1b42079ddfe445dcfc7fb222e29665c86cae0f720250e009  shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
