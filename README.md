@@ -40,11 +40,11 @@ Company/tax register entries or equivalent:
 - **Registered Capital**: 2 million RMB
 - **Date of Establishment**: March 3, 2008
 - **Unified Social Credit Code**: 91320505672527374L
-- **Registered Address**: No. 209 Zhuyuan Road, Suzhou High-tech Zone
+- **Registered Address**: No. 209 Zhuyuan Road, Suzhou High-tech Zone, Suzhou, China
 - **Type of Organization**: Enterprise
 
 ### Registration Information
-- **Name of the Registration and Management Department**: Suzhou High-tech Zone (Huchu District) Administrative Examination and Approval Bureau
+- **Name of the Registration and Management Department**: Suzhou High-tech Zone (HuQiu District) Administrative Examination and Approval Bureau, Suzhou, China
 - **Operating Period**: March 3, 2008 to March 2, 2038
 - **Registration Number**: 320512000080161
 - **Economic Type**: Limited Liability Company (Invested by Individuals or Controlled by Individuals)
