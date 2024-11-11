@@ -22,7 +22,61 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
-Suzhou Shenxinda Network Technology Co., Ltd. We provide data leakage prevention solutions for organizations.
+- Suzhou Shenxinda Information Technology Co., Ltd. We provide data leakage prevention solutions for organizations.
+- https://www.shenxinda.com/
+
+*******************************************************************************
+### What's the legal data that proves the organization's genuineness?
+The reviewers should be able to easily verify, that your organization is a legal entity, to prevent abuse.
+Provide the information, which can prove the genuineness with certainty.
+*******************************************************************************
+Company/tax register entries or equivalent:  
+(a link to the organization entry in your jurisdiction's register will do)  
+
+```
+## Suzhou Shenxinda Information Technology Co., Ltd.
+
+- **Legal Representative or Person in Charge**: Liu Caihong
+- **Registered Capital**: 2 million RMB
+- **Date of Establishment**: March 3, 2008
+- **Unified Social Credit Code**: 91320505672527374L
+- **Registered Address**: No. 209 Zhuyuan Road, Suzhou High-tech Zone
+- **Type of Organization**: Enterprise
+
+### Registration Information
+- **Name of the Registration and Management Department**: Suzhou High-tech Zone (Huchu District) Administrative Examination and Approval Bureau
+- **Operating Period**: March 3, 2008 to March 2, 2038
+- **Registration Number**: 320512000080161
+- **Economic Type**: Limited Liability Company (Invested by Individuals or Controlled by Individuals)
+- **Economic Industry**: Professional Technical Services
+
+### Scope of Business
+R&D: Computer software and hardware, industrial control systems, automated equipment, monitoring systems, and providing corresponding technical services and repair services; Sales: Computer software and hardware, automated equipment, monitoring equipment, electronic products, communication devices, instruments, and meters. (Projects subject to approval by relevant authorities shall not be carried out without such approval.)
+
+```
+
+The public details of both your organization and the issuer in the EV certificate used for signing .cab files at Microsoft Hardware Dev Center File Signing Services.  
+(**not** the CA certificate embedded in your shim binary)
+
+Example:
+
+```
+Issuer: O=MyIssuer, Ltd., CN=MyIssuer EV Code Signing CA
+Subject: C=XX, O=MyCompany, Inc., CN=MyCompany, Inc.
+```
+
+Issuer & Subject
+```
+CN = DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+O = DigiCert, Inc.
+C = US
+
+CN = SuZhou ShenXinDa Information Technology Co., LTD
+O = SuZhou ShenXinDa Information Technology Co., LTD
+L = Suzhou
+S = Jiangsu
+C = CN
+```
 
 *******************************************************************************
 ### What product or service is this for?
@@ -244,9 +298,9 @@ It is our first application
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-dec861c08ed799572940c37cd25362336ec81c09215b9a9eabdbc2a264231005  shimaa64.efi
-4900963fee4202a900c485f7e760033655b25b2523bd2602ce39779072eedf06  shimia32.efi
-b0e949addb41078d1b42079ddfe445dcfc7fb222e29665c86cae0f720250e009  shimx64.efi
+c9b6082ecb67c2d480e9a4493a8f178b33192ffc9854a090729812bcc91a6760  shimaa64.efi
+c3a1f3b87d5b3373c4027fb68044d451feff1b489f55d4666684d14f18d33dce  shimia32.efi
+ed29dd29461f0dc13685eef5970ad052de4aa0515a6b6bbb0d1732d3bc7f5c80  shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -275,13 +329,14 @@ shim
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.shenxinda,1,Suzhou Shenxinda Information Technology,shim,15.8,mail:security@shenxinda.com
 ```
 
 grub
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,4,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/
-grub.shenxinda,1,shenxinda,grub,2.06,https://www.shenxinda.com
+grub.shenxinda,1,shenxinda,grub,2.06,mail:security@shenxinda.com
 ```
 
 *******************************************************************************
