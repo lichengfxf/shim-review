@@ -150,7 +150,7 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-https://github.com/lichengfxf/shim-review
+https://github.com/rhboot/shim/releases/download/15.8/shim-15.8.tar.bz2
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -298,15 +298,15 @@ It is our first application
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-c9b6082ecb67c2d480e9a4493a8f178b33192ffc9854a090729812bcc91a6760  shimaa64.efi
-c3a1f3b87d5b3373c4027fb68044d451feff1b489f55d4666684d14f18d33dce  shimia32.efi
-ed29dd29461f0dc13685eef5970ad052de4aa0515a6b6bbb0d1732d3bc7f5c80  shimx64.efi
+6201939687039105a0b53063f9f1a7586b48c5a1a78a44810475cb66d170df1e  shimaa64.efi
+00b0dd514f05a269068461b4124cda5a77bc90ee04a86681e22f98f0592f5c58  shimia32.efi
+44a44161d9096938d14bb8f62a64bd51bde1a1b255fc16b7fa80f864057efa47  shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
 Describe the security strategy that is used for key protection. This can range from using hardware tokens like HSMs or Smartcards, air-gapped vaults, physical safes to other good practices.
 *******************************************************************************
-We use a hardware security module.
+We use a hardware security module: SafeNet eToken 5110 CC (940). Only CTO can access it.
 
 *******************************************************************************
 ### Do you use EV certificates as embedded certificates in the shim?
