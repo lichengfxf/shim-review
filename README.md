@@ -346,7 +346,10 @@ Skip this, if you're not using GRUB2.
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
 ```
-part_gpt part_msdos fat memdisk squash4 iso9660 cpio loopback keylayouts at_keyboard all_video gfxterm terminal font gettext echo regexp cat gcry_sha256 gcry_sha512 gcry_dsa gcry_rsa password_pbkdf2 pbkdf2 efinet tftp http linux boot halt reboot minicmd sleep test gzio normal configfile peimage
+part_gpt part_msdos ext2 fat memdisk squash4 iso9660 cpio loopback keylayouts at_keyboard 
+all_video gfxterm terminal font gettext echo regexp cat gcry_sha256 gcry_sha512 gcry_dsa 
+gcry_rsa password_pbkdf2 pbkdf2 efinet tftp http linux boot halt reboot minicmd sleep
+test gzio normal configfile chain
 ```
 
 *******************************************************************************
